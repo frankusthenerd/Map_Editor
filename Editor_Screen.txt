@@ -1,0 +1,46 @@
+{ sprites_lbl    }+-editor---------------------------------+{ inspector_lbl    }
++-sprite_pal-----+|                                        |+--inspector-------+
+|                ||                                        ||                  |
+|                ||                                        ||                  |
+|                ||                                        ||                  |
+|                ||                                        ||                  |
+|                ||                                        ||                  |
+|                ||                                        ||                  |
+|                ||                                        ||                  |
+|                ||                                        ||                  |
+|                ||                                        ||                  |
+|                ||                                        ||                  |
+|                ||                                        ||                  |
+|                ||                                        ||                  |
++----------------+|                                        ||                  |
+{ levels_lbl     }|                                        |+------------------+
++-levels---------+|                                        |( update_sprite    )
+|                ||                                        |
+|                ||                                        |{ layer_lbl        }
+|                ||                                        |[ layer            ]
+|                ||                                        |( update_layer     )
+|                ||                                        |
+|                ||                                        |{ background_lbl   }
+|                ||                                        |[ background       ]
+|                ||                                        |
+|                ||                                        |{ music_lbl        }
+|                ||                                        |[ music            ]
++----------------+|                                        |
+{ level_name_lbl }|                                        |( load_level       )
+[ level_name     ]+----------------------------------------+( save_level       )
+
+sprites_lbl->type=label,label=Sprites,red=0,green=0,blue=0
+sprite_pal->type=toolbar,columns=2
+levels_lbl->type=label,label=Levels,red=0,green=0,blue=0
+levels->type=list
+level_name_lbl->type=label,label=Level Name,red=0,green=0,blue=0
+editor->type=map-editor
+inspector_lbl->type=label,label=Sprite Inspector,red=0,green=0,blue=0
+inspector->type=grid-view,columns=2
+layer_lbl->type=label,label=Selected Layer,red=0,green=0,blue=0
+background_lbl->type=label,label=Background,red=0,green=0,blue=0
+music_lbl->type=label,label=Music Track,red=0,green=0,blue=0
+load_level->label=Load Level,red=0,green=128,blue=0
+save_level->label=Save Level,red=0,green=0,blue=128
+update_sprite->label=Update Sprite,red=0,green=128,blue=0
+update_layer->label=Update Layer,red=0,green=0,blue=128

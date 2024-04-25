@@ -1,0 +1,7 @@
+width=640
+height=480
+cell-w=8
+cell-h=16
+red=255
+green=255
+blue=255
